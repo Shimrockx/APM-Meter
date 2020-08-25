@@ -47,4 +47,4 @@ skip_commits:
 #---------------------------------#
 
 artifacts:
-  - path: '**\APM Meter.exe'
+  - path: 'src\APM Meter\bin\Release\APM Meter.exe'
