@@ -13,7 +13,7 @@ Kindly report only issues/bugs here.
 
 ### Development environment
 
-* Visual Studio Code
+* Visual Studio 2019
 
 ### Usage
 
