@@ -120,10 +120,10 @@ namespace APM_Meter
         /// <param name="e"></param>
         private void OnKeyPressed(object sender, GlobalKeyboardHookEventArgs e)
         {
-            Debug.WriteLine(e.KeyboardData.VirtualCode);
+            //Debug.WriteLine(e.KeyboardData.VirtualCode);
 
-            if (e.KeyboardData.VirtualCode != GlobalKeyboardHook.VkSnapshot)
-                return;
+            //if (e.KeyboardData.VirtualCode != GlobalKeyboardHook.VkSnapshot)
+            //    return;
 
             if (e.KeyboardData.VirtualCode == 92)
                 return;
