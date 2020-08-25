@@ -37,6 +37,7 @@ namespace APM_Meter
             SetupTimer();
 
             Label.MouseLeftButtonDown += Label_MouseLeftButtonDown;
+            Closing += MainWindow_Closing;
         }
 
         /// <summary>
@@ -119,10 +120,13 @@ namespace APM_Meter
         /// <param name="e"></param>
         private void OnKeyPressed(object sender, GlobalKeyboardHookEventArgs e)
         {
-            //Debug.WriteLine(e.KeyboardData.VirtualCode);
+            Debug.WriteLine(e.KeyboardData.VirtualCode);
 
-            //if (e.KeyboardData.VirtualCode != GlobalKeyboardHook.VkSnapshot)
-            //    return;
+            if (e.KeyboardData.VirtualCode != GlobalKeyboardHook.VkSnapshot)
+                return;
+
+            if (e.KeyboardData.VirtualCode == 92)
+                return;
 
             if (e.KeyboardState == GlobalKeyboardHook.KeyboardState.KeyUp)
             {
@@ -139,6 +143,12 @@ namespace APM_Meter
         private void OnMouseAction(object sender, EventArgs e)
         {
             inputController.IncrementInput();
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            Dispose();
         }
     }
 }
