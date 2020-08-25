@@ -1,0 +1,16 @@
+﻿<Window x:Class="APM_Meter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APM_Meter"
+        mc:Ignorable="d"
+        Title="APM Meter" Height="190" Width="200" FontFamily="/APM Meter;component/Fonts/#ArcadeClassic" WindowStyle="None" HorizontalAlignment="Left" VerticalAlignment="Top" ResizeMode="NoResize" Background="#FF0F0F0F" Foreground="#FFF0F0F0" AllowsTransparency="True" Icon="APM_Meter.png">
+    <Canvas Margin="1,1,0,0">
+        <Border BorderBrush="White" BorderThickness="1" Canvas.Left="1" Canvas.Top="1" Height="188" Width="198"/>
+        <TextBlock x:Name="Label" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="24" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="10" Text="APM Meter" Width="180" Height="50"/>
+        <TextBlock x:Name="APM" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="22" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="60" Text="x/m" Height="50"/>
+        <TextBlock x:Name="APS" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="22" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="110" Text="x/s" Height="50"/>
+        <TextBlock x:Name="Total" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Bold" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="159" Text="Total : " Height="20"/>
+    </Canvas>
+</Window>
