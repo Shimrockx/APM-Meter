@@ -14,10 +14,12 @@ namespace APM_Meter.Controllers
 
         public long totalInput = 0;
         public long apmInput = 0;
+        public long apmAverage = 0;
         public long apsInput = 0;
 
         private long currentMinuteInput = 0;
         private long currentSecondInput = 0;
+        private List<long> apmInputs = new List<long>();
 
         /// <summary>
         /// Increments input number based on mouse/key events
@@ -56,6 +58,8 @@ namespace APM_Meter.Controllers
         {
             apmInput = currentMinuteInput;
             currentMinuteInput = 0;
+            apmInputs.Add(apmInput);
+            apmAverage = (long)Math.Round(apmInputs.Average());
         }
 
         /// <summary>
