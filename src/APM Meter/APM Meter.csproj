@@ -67,6 +67,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controllers\InputController.cs" />
+    <Compile Include="Hooks\GlobalGamepadHook.cs" />
     <Compile Include="Hooks\GlobalKeyboardHook.cs" />
     <Compile Include="Hooks\GlobalMouseHook.cs" />
     <Compile Include="MainWindow.xaml.cs">
