@@ -91,6 +91,7 @@ namespace APM_Meter
         {
             Total.Text = "Total : " + inputController.totalInput;
             APM.Text = inputController.apmInput + "/m";
+            APM_Average.Text = "Average : " + inputController.apmAverage + "/m";
             APS.Text = inputController.apsInput + "/s";
         }
 
@@ -147,7 +148,6 @@ namespace APM_Meter
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            e.Cancel = true;
             Dispose();
         }
     }

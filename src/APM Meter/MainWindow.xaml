@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="APM Meter" Height="190" Width="200" FontFamily="/APM Meter;component/Fonts/#ArcadeClassic" WindowStyle="None" HorizontalAlignment="Left" VerticalAlignment="Top" ResizeMode="NoResize" Background="#FF0F0F0F" Foreground="#FFF0F0F0" AllowsTransparency="True" Icon="APM_Meter.png">
     <Canvas Margin="1,1,0,0">
-        <Border BorderBrush="White" BorderThickness="1" Canvas.Left="1" Canvas.Top="1" Height="188" Width="198"/>
+        <Border BorderBrush="White" BorderThickness="1" Canvas.Left="0" Canvas.Top="0" Height="189" Width="199" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBlock x:Name="Label" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="24" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="10" Text="APM Meter" Width="180" Height="50"/>
-        <TextBlock x:Name="APM" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="22" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="60" Text="x/m" Height="50"/>
-        <TextBlock x:Name="APS" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="22" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="110" Text="x/s" Height="50"/>
-        <TextBlock x:Name="Total" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Bold" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="159" Text="Total : " Height="20"/>
+        <TextBlock x:Name="APM" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="22" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="60" Height="50"><Run Text="x/m"/></TextBlock>
+        <TextBlock x:Name="APM_Average" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Normal" VerticalAlignment="Center" Text="Average :" Height="20" RenderTransformOrigin="0.323,0.491" Width="180" FontSize="12" TextAlignment="Left" FontStyle="Italic" Canvas.Left="10" Canvas.Top="90"/>
+        <TextBlock x:Name="APS" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="22" Width="180" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="120" Text="x/s" Height="50"/>
+        <TextBlock x:Name="Total" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="40" Text="Total : " Height="20" FontStyle="Italic" RenderTransformOrigin="0.376,0.718"/>
     </Canvas>
 </Window>
