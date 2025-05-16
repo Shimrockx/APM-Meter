@@ -2,8 +2,6 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/y1c61997pomysftl/branch/master?svg=true)](https://ci.appveyor.com/project/Shimrockx/apm-meter/branch/master)
 
-### Note: This Project will surely be updated
-
 A simple overlay app for global windows user actions mouse, keyboard events and get APM and APS.
 
 **Download latest release [here](https://github.com/Shimrockx/APM-Meter/releases/latest)**
@@ -17,7 +15,7 @@ Kindly report only issues/bugs here.
 
 ### Development environment
 
-* Visual Studio 2019
+* Visual Studio 2022
 
 ### Usage
 
