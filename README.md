@@ -4,6 +4,8 @@
 
 An app for global windows user actions mouse, keyboard events to increment number and get APM and APS
 
+[![Build status](https://ci.appveyor.com/api/projects/status/y1c61997pomysftl/branch/master?svg=true)](https://ci.appveyor.com/project/Shimrockx/apm-meter/branch/master)
+
 Kindly report only issues/bugs here.
 
 ### Supported Events
