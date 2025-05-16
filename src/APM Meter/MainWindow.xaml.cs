@@ -131,7 +131,7 @@ namespace APM_Meter
             if (e.KeyboardState == GlobalKeyboardHook.KeyboardState.KeyUp)
             {
                 inputController.IncrementInput();
-                e.Handled = true;
+                e.Handled = false;
             }
         }
 
