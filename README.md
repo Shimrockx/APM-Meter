@@ -21,7 +21,7 @@ Kindly report only issues/bugs here.
 
 Just execute the exe file
 
-Total : This value represents the total sum of actions registered.
+Total : This value represents the sum of actions registered.
 
 x/M : This value represents the sum of the actions registered in the last past minute.
 
