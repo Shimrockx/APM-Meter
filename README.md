@@ -2,7 +2,7 @@
 
 ### Note: This Project will surely be updated
 
-An app for global windows user actions mouse, keyboard events to increment number and get APM and APS.
+An app for global windows user actions mouse, keyboard events to increment number and get APM and APS
 
 Kindly report only issues/bugs here.
 
@@ -19,4 +19,4 @@ Kindly report only issues/bugs here.
 
 Just execute the exe file
 
-![alt tag](/Capture.PNG)
+![alt tag](https://raw.githubusercontent.com/Shimrockx/APM-Meter/master/docs/CAPTURE.png)
