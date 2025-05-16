@@ -37,6 +37,7 @@ namespace APM_Meter
             SetupTimer();
 
             Label.MouseLeftButtonDown += Label_MouseLeftButtonDown;
+            Deactivated += MainWindow_Deactivated;
             Closing += MainWindow_Closing;
         }
 
@@ -144,6 +145,12 @@ namespace APM_Meter
         private void OnMouseAction(object sender, EventArgs e)
         {
             inputController.IncrementInput();
+        }
+
+        private void MainWindow_Deactivated(object sender, EventArgs e)
+        {
+            var window = (Window)sender;
+            window.Topmost = true;
         }
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
