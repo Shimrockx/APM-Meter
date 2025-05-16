@@ -21,4 +21,12 @@ Kindly report only issues/bugs here.
 
 Just execute the exe file
 
+Total : This value represents the total sum of actions registered.
+
+x/M : This value represents the sum of the actions registered in the last past minute.
+
+Average x/M : This value represents the average of the actions registered in all past minutes.
+
+x/S : This value represents the sum of the actions registered in the last past second.
+
 ![alt tag](https://raw.githubusercontent.com/Shimrockx/APM-Meter/master/docs/CAPTURE.png)
